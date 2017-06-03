@@ -10,6 +10,7 @@ namespace BashSoft
     {
         static void Main()
         {
+            IOManager.TraverseDirectory(@"C:\Projects\BashSoft\BashSoft");
         }
     }
 }

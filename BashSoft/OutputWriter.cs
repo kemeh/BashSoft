@@ -15,7 +15,7 @@ namespace BashSoft
 
         public static void WriteMessageOnNewLine(string message)
         {
-
+            Console.WriteLine(message);
         }
 
         public static void WriteEmptyLine()
@@ -25,7 +25,10 @@ namespace BashSoft
 
         public static void DisplayException(string message)
         {
-
+            ConsoleColor currentColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ForegroundColor = currentColor;
         }
     }
 }
