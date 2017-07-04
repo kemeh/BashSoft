@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BashSoft
 {
@@ -10,7 +7,7 @@ namespace BashSoft
     {
         public static void WriteMessage(string message)
         {
-            
+            Console.Write(message);
         }
 
         public static void WriteMessageOnNewLine(string message)
